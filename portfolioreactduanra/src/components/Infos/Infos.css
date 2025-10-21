@@ -1,0 +1,15 @@
+.infos {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  padding: 2rem;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.infos__text {
+  color: aliceblue;
+}
