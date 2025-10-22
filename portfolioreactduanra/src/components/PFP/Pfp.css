@@ -1,0 +1,36 @@
+.pfp {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.pfp img {
+  width: 500px;
+  height: 500px;
+  border-radius: 10%;
+  object-fit: cover;
+  border: 3px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.infos {
+  background-color: transparent;
+  color: aliceblue;
+  padding: 1rem 2rem;
+  text-align: center;
+  max-width: 600px;
+}
+
+.infos__text {
+  color: aliceblue;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
