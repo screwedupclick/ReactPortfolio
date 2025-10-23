@@ -2,11 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
   :root {
-
     --background: 0 0% 100%;
 
     --foreground: 0 0% 3.9%;
@@ -55,10 +52,9 @@
 
     --chart-5: 27 87% 67%;
 
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
-
     --background: 0 0% 3.9%;
 
     --foreground: 0 0% 98%;
@@ -105,11 +101,9 @@
 
     --chart-4: 280 65% 60%;
 
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {
@@ -117,5 +111,76 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Responsive Layout Styles */
+@layer components {
+  .layout__container {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  /* DarkVeil Component Styles */
+  .darkveil {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  /* Responsive Design - Tablette */
+  @media (max-width: 1024px) {
+    .layout__container {
+      padding: 0;
+    }
+
+    .darkveil {
+      /* Optimisation pour tablettes */
+      image-rendering: optimizeSpeed;
+    }
+  }
+
+  /* Responsive Design - Mobile Large */
+  @media (max-width: 768px) {
+    .layout__container {
+      padding: 0;
+    }
+
+    .darkveil {
+      /* Optimisation pour mobiles */
+      image-rendering: optimizeSpeed;
+    }
+  }
+
+  /* Responsive Design - Mobile */
+  @media (max-width: 480px) {
+    .layout__container {
+      padding: 0;
+    }
+
+    .darkveil {
+      /* Optimisation pour petits mobiles */
+      image-rendering: optimizeSpeed;
+    }
+  }
+
+  /* Responsive Design - Mobile Small */
+  @media (max-width: 360px) {
+    .layout__container {
+      padding: 0;
+    }
+
+    .darkveil {
+      /* Optimisation maximale pour très petits écrans */
+      image-rendering: optimizeSpeed;
+    }
   }
 }

@@ -10,45 +10,57 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-container">
-        <div className="hamburger-menu" onClick={toggleMenu}>
-          <div className={`hamburger-bar ${menuOpen ? "open" : ""}`}></div>
-          <div className={`hamburger-bar ${menuOpen ? "open" : ""}`}></div>
-          <div className={`hamburger-bar ${menuOpen ? "open" : ""}`}></div>
+      <div className="navbar__container">
+        <div className="navbar__hamburger" onClick={toggleMenu}>
+          <div
+            className={`navbar__hamburger__bar ${
+              menuOpen ? "navbar__hamburger__bar--open" : ""
+            }`}
+          ></div>
+          <div
+            className={`navbar__hamburger__bar ${
+              menuOpen ? "navbar__hamburger__bar--open" : ""
+            }`}
+          ></div>
+          <div
+            className={`navbar__hamburger__bar ${
+              menuOpen ? "navbar__hamburger__bar--open" : ""
+            }`}
+          ></div>
         </div>
 
-        <ul className={`navbar-menu ${menuOpen ? "open" : ""}`}>
-          <li className="navbar-item">
+        <ul className={`navbar__menu ${menuOpen ? "navbar__menu--open" : ""}`}>
+          <li className="navbar__item">
             <a
               href="#"
-              className="navbar-link"
+              className="navbar__link"
               onClick={() => setMenuOpen(false)}
             >
               Accueil
             </a>
           </li>
-          <li className="navbar-item">
+          <li className="navbar__item">
             <a
               href="#"
-              className="navbar-link"
+              className="navbar__link"
               onClick={() => setMenuOpen(false)}
             >
               Parcours
             </a>
           </li>
-          <li className="navbar-item">
+          <li className="navbar__item">
             <a
               href="#"
-              className="navbar-link"
+              className="navbar__link"
               onClick={() => setMenuOpen(false)}
             >
               Projet
             </a>
           </li>
-          <li className="navbar-item">
+          <li className="navbar__item">
             <a
               href="#"
-              className="navbar-link"
+              className="navbar__link"
               onClick={() => setMenuOpen(false)}
             >
               Contact

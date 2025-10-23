@@ -5,7 +5,7 @@ import Pfp from "@/components/PFP";
 
 export default function Home() {
   return (
-    <div className="fixed inset-0 w-full h-full">
+    <div className="layout__container">
       <DarkVeil />
       <Navbar />
       <Pfp />
